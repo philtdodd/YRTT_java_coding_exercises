@@ -17,23 +17,14 @@ public class Exercise003Test {
     }
 
     @Test
-    public void checkGetIceCreamCodeForMintChocolateChip() {
-        String iceCreamFlavour = "Mint Chocolate Chip";
-        int expected = 3;
+    public void checkGetIceCreamCodeForPistachio() {
+        String iceCreamFlavour = "Pistachio";
+        int expected = 0;
 
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    @Disabled("You can remove this @Disabled annotation to run the test")
-    @Test
-    public void checkGetIceCreamCodeForMangoSorbet() {
-        String iceCreamFlavour = "Mango Sorbet";
-        int expected = 5;
-
-        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
-    }
-
-    @Disabled("You can remove this @Disabled annotation to run the test")
+    //@Disabled("You can remove this @Disabled annotation to run the test")
     @Test
     public void checkGetIceCreamCodeForRaspberryRipple() {
         String iceCreamFlavour = "Raspberry Ripple";
@@ -42,7 +33,40 @@ public class Exercise003Test {
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    @Disabled("You can remove this @Disabled annotation to run the test")
+    @Test
+    public void checkGetIceCreamCodeForVanilla() {
+        String iceCreamFlavour = "Vanilla";
+        int expected = 2;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamCodeForMintChocolateChip() {
+        String iceCreamFlavour = "Mint Chocolate Chip";
+        int expected = 3;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    @Test
+    public void checkGetIceCreamCodeForChocolate() {
+        String iceCreamFlavour = "Chocolate";
+        int expected = 4;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    //@Disabled("You can remove this @Disabled annotation to run the test")
+    @Test
+    public void checkGetIceCreamCodeForMangoSorbet() {
+        String iceCreamFlavour = "Mango Sorbet";
+        int expected = 5;
+
+        assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
+    }
+
+    //@Disabled("You can remove this @Disabled annotation to run the test")
     @Test
     public void checkPickMultipleIceCreamFlavours() {
 
